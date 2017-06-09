@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Base",
+    "supply": [
+      "Copper",
+      "Silver",
+      "Gold",
+      "Estate",
+      "Duchy",
+      "Province"
+    ],
+    "use": true
+  },
+  {
+    "name": "Intrigue",
+    "use": false
+  },
+  {
+    "name": "Seaside",
+    "use": false
+  },
+  {
+    "name": "Alchemy",
+    "use": false
+  },
+  {
+    "name": "Prosperity",
+    "supply": [
+      "Platinum",
+      "Colony"
+    ],
+    "use": false
+  },
+  {
+    "name": "Cornucopia",
+    "supply": [
+      "Bag of Gold",
+      "Diadem",
+      "Followers",
+      "Princess",
+      "Trusty Steed"
+    ],
+    "use": false
+  },
+  {
+    "name": "Hinterlands",
+    "use": false
+  },
+  {
+    "name": "Dark Ages",
+    "supply": [
+      "Hovel",
+      "Necropolis",
+      "Overgrown Estate"
+    ],
+    "use": false
+  },
+  {
+    "name": "Guilds",
+    "use": false
+  }
+]

@@ -1,0 +1,35 @@
+.rzslider .rz-pointer {
+  width: 20px;
+  height: 20px;
+  margin-top: 6px;
+  background-color: $brand-primary;
+  -webkit-border-radius: .1rem;
+  -moz-border-radius: .1rem;
+  border-radius: .1rem;
+  -webkit-transition: all .15s ease;
+  -moz-transition: all .15s ease;
+  -ms-transition: all .15s ease;
+  -o-transition: all .15s ease;
+  transition: all .15s ease;
+}
+
+.rzslider .rz-pointer:after {
+  display: none;
+}
+
+.rzslider .rz-bubble {
+  font-size: .9rem;
+  line-height: .9rem;
+}
+
+.rzslider .rz-bar {
+  background: $brand-info;
+}
+
+.rzslider .rz-bar.rz-selection {
+  background: $brand-primary;
+}
+
+.rzslider {
+  margin-top: 20px;
+}

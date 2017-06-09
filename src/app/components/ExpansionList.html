@@ -1,0 +1,11 @@
+<div class="row m-t-1">
+    <div ng-repeat="expac in $ctrl.expansions track by $index"
+         class="dominion-icon-select"
+         ng-class="{'selected': expac.use}"
+         ng-click="expac.use = !expac.use; $ctrl.onClickAction()">
+        <svg>
+            <use xlink:href="{{ $ctrl.getIcon(expac) }}"></use>
+        </svg>
+        <span class="icon-text">{{ expac.name }}</span>
+    </div>
+</div>

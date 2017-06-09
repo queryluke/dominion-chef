@@ -1,0 +1,35 @@
+<div class="pt-page-content">
+    <div class="welcome-tron">
+        <h1>DomEngine</h1>
+        <p class="text">An attempt to make randomizing Dominion playsets easy</p>
+
+        <div class="build-form">
+            <h2>Choose Your Expansions</h2>
+            <div class="row">
+                <expansion-list expansions="$ctrl.expansions"></expansion-list>
+            </div>
+            <div class="row">
+                <button class="btn btn-primary" id="build" ng-click="$ctrl.handleBuild()">Build a Playset</button>
+                <p style="margin-top:10px;"><a ng-href="advanced-options"><small>Advanced Options</small></a></p>
+            </div>
+        </div>
+    </div>
+    <div class="welcome-footer text-xs-center hidden-xs-down">
+        <p class="text">
+            <small style="line-height: .5rem;">
+                Images served from the
+                <a href="http://wiki.dominionstrategy.com/index.php/Main_Page" target="blank">Dominion Strategy Wiki</a>,
+                and are available under
+                <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank">
+                    Creative Commons Attribution Non-Commercial Share Alike
+                </a>
+            </small>
+            <br>
+            <small style="line-height: .5rem;">
+                <a href="http://boardgamegeek.com/filepage/73273/dominion-card-icons-vector-images">SVG Icons</a>
+                created by <a href="http://boardgamegeek.com" target="_blank">BoardGameGeek</a> user
+                <a href="http://boardgamegeek.com/user/m_knox" target="_blank">m_knox</a>.
+            </small>
+        </p>
+    </div>
+</div>

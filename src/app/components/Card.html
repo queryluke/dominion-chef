@@ -1,0 +1,25 @@
+<div class="dom-card">
+    <img class="card-image" ng-src="{{ $ctrl.card.image }}" alt="{{ $ctrl.card.name }}" ng-if="$ctrl.$storage.useImages">
+    <div class="card-desc" ng-show="!$ctrl.$storage.useImages">
+        <h4 class="card-title"><small>{{ $ctrl.card.name }}</small></h4>
+        <div class="card-text-wrapper">
+            <p class="card-text" ng-repeat="text in $ctrl.card.text track by $index">{{ text }}</p>
+        </div>
+        <div class="card-cost-wrapper">
+            <div class="card-cost" ng-if="$ctrl.card.cost.coin">{{ $ctrl.getCardCost() }}</div>
+            <div ng-if="$ctrl.card.cost.potion" class="card-icon add-cost-icon">
+                <svg>
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="icons.svg#icon-alchemy"></use>
+                </svg>
+            </div>
+        </div>
+        <div class="card-types text-capitalize">
+            {{ $ctrl.getCardTypes() }}
+        </div>
+        <div class="card-icon card-expansion-icon">
+            <svg>
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ $ctrl.getCardExpansion($ctrl.card.set) }}"></use>
+            </svg>
+        </div>
+    </div>
+</div>

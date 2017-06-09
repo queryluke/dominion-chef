@@ -1,0 +1,57 @@
+<div class="pt-page-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-lg-4 text-xs-right text-sm-center text-lg-left">
+                <h1>Playset</h1>
+            </div>
+            <div class="col-sm-12 col-lg-8 text-xs-right text-sm-center text-lg-right">
+                <button class="btn btn-outline-success share-button" ng-class="{'open': $ctrl.shareOpen}" ng-click="$ctrl.toggleShare()">
+                    <i class="fa fa-share-alt"></i>
+                    <span class="hidden-xs-down"> Share</span>
+                </button>
+                <button class="btn btn-outline-primary" ng-click="$ctrl.onBuild()">
+                    <i class="fa fa-refresh"></i>
+                    <span class="hidden-xs-down"> Re-build</span>
+                </button>
+                <a ng-href="advanced-options" class="btn btn-outline-secondary">
+                    <i class="fa fa-cogs"></i>
+                    <span class="hidden-xs-down">Build Options</span>
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 m-t-1">
+                <!-- errors -->
+                <div class="alert alert-danger" ng-if="$ctrl.errors.length">
+                    <h3>Oops, something went wrong</h3>
+                    <ul>
+                        <li ng-repeat="error in $ctrl.errors track by $index">{{ error }}</li>
+                    </ul>
+                </div>
+                <!-- warnings -->
+                <div class="alert alert-warning" ng-if="$ctrl.warning.length">
+                    <h3>Notice</h3>
+                    <ul>
+                        <li ng-repeat="warn in $ctrl.warning track by $index">{{ warn }}</li>
+                    </ul>
+                </div>
+                <div class="well">
+                    <a ng-click="$ctrl.$storage.useImages = !$ctrl.$storage.useImages"
+                       class="btn btn-sm btn-info" style="position: absolute; right: 2rem;">
+                        <i class="fa fa-picture-o"></i>
+                        <span id="imageStrikeThrough" ng-if="$ctrl.$storage.useImages"></span>
+                        <span class="hidden-xs-down">Card Images</span>
+                    </a>
+                    <h2>Kingdom Cards</h2>
+                    <card-list cards="$ctrl.playset.cards"></card-list>
+                    <h2>Supply Cards</h2>
+                    <card-list cards="$ctrl.treasure"></card-list>
+                    <card-list cards="$ctrl.victory"></card-list>
+                    <card-list cards="$ctrl.ruins"></card-list>
+                    <h2 ng-if="$ctrl.playset.requiredCards.other.length">Additional Required Cards</h2>
+                    <card-list cards="$ctrl.playset.requiredCards.other"></card-list>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,441 @@
+[
+  {
+    "name": "Curse",
+    "image": "http://wiki.dominionstrategy.com/images/thumb/9/97/Curse.jpg/200px-Curse.jpg",
+    "text": [
+      "-1 VP"
+    ],
+    "cost": {
+      "coin": "0"
+    },
+    "types": [
+      "curse"
+    ],
+    "show": true,
+    "set": "Base"
+  },
+  {
+    "name": "Copper",
+    "image": "http://wiki.dominionstrategy.com/images/thumb/f/fb/Copper.jpg/200px-Copper.jpg",
+    "text": [
+      "+1 Coin"
+    ],
+    "cost": {
+      "coin": "0"
+    },
+    "types": [
+      "treasure",
+      "supply"
+    ],
+    "show": true,
+    "set": "Base"
+  },
+  {
+    "name": "Estate",
+    "image": "http://wiki.dominionstrategy.com/images/thumb/9/91/Estate.jpg/200px-Estate.jpg",
+    "text": [
+      "+1 VP"
+    ],
+    "cost": {
+      "coin": "2"
+    },
+    "types": [
+      "victory",
+      "supply"
+    ],
+    "show": true,
+    "set": "Base"
+  },
+  {
+    "name": "Silver",
+    "image": "http://wiki.dominionstrategy.com/images/thumb/5/5d/Silver.jpg/200px-Silver.jpg",
+    "text": [
+      "+2 Coin"
+    ],
+    "cost": {
+      "coin": "3"
+    },
+    "types": [
+      "treasure",
+      "supply"
+    ],
+    "show": true,
+    "set": "Base"
+  },
+  {
+    "name": "Duchy",
+    "image": "http://wiki.dominionstrategy.com/images/thumb/4/4a/Duchy.jpg/200px-Duchy.jpg",
+    "text": [
+      "+3 VP"
+    ],
+    "cost": {
+      "coin": "5"
+    },
+    "types": [
+      "victory",
+      "supply"
+    ],
+    "show": true,
+    "set": "Base"
+  },
+  {
+    "name": "Gold",
+    "image": "http://wiki.dominionstrategy.com/images/thumb/5/50/Gold.jpg/200px-Gold.jpg",
+    "text": [
+      "+3 Coin"
+    ],
+    "cost": {
+      "coin": "6"
+    },
+    "types": [
+      "treasure",
+      "supply"
+    ],
+    "show": true,
+    "set": "Base"
+  },
+  {
+    "name": "Province",
+    "image": "http://wiki.dominionstrategy.com/images/thumb/8/81/Province.jpg/200px-Province.jpg",
+    "text": [
+      "+6 VP"
+    ],
+    "cost": {
+      "coin": "8"
+    },
+    "types": [
+      "victory",
+      "supply"
+    ],
+    "show": true,
+    "set": "Base"
+  },
+  {
+    "name": "Potion",
+    "image": "http://wiki.dominionstrategy.com/images/thumb/c/c3/Potion.jpg/200px-Potion.jpg",
+    "text": [
+      "+1 Potion"
+    ],
+    "cost": {
+      "coin": "4"
+    },
+    "types": [
+      "treasure",
+      "supply"
+    ],
+    "show": true,
+    "set": "Alchemy"
+  },
+  {
+    "name": "Colony",
+    "image": "http://wiki.dominionstrategy.com/images/thumb/6/60/Colony.jpg/200px-Colony.jpg",
+    "text": [
+      "+10 VP"
+    ],
+    "cost": {
+      "coin": "11"
+    },
+    "types": [
+      "victory",
+      "supply"
+    ],
+    "show": true,
+    "set": "Prosperity"
+  },
+  {
+    "name": "Platinum",
+    "image": "http://wiki.dominionstrategy.com/images/thumb/7/72/Platinum.jpg/200px-Platinum.jpg",
+    "text": [
+      "+5 Coin"
+    ],
+    "cost": {
+      "coin": "9"
+    },
+    "types": [
+      "treasure",
+      "supply"
+    ],
+    "show": true,
+    "set": "Prosperity"
+  },
+  {
+  "name": "Bag of Gold",
+  "image": "http://wiki.dominionstrategy.com/images/thumb/b/b4/Bag_of_Gold.jpg/200px-Bag_of_Gold.jpg",
+  "text": [
+    "+1 action",
+    "Gain a Gold, putting it on top of your deck.",
+    "(This is not in the supply.)"
+  ],
+  "cost": {
+    "coin": "0plus"
+  },
+  "types": [
+    "action",
+    "prize"
+  ],
+  "show": true,
+    "set": "Cornucopia"
+  },
+  {
+    "name": "Diadem",
+    "image": "http://wiki.dominionstrategy.com/images/thumb/3/35/Diadem.jpg/200px-Diadem.jpg",
+    "text": [
+      "+2 Coin",
+      "When you play this, +1 Coin per unused action you have (action, not action card).",
+      "(This is not in the supply.)"
+    ],
+    "cost": {
+      "coin": "0plus"
+    },
+    "types": [
+      "treasure",
+      "prize"
+    ],
+    "show": true,
+    "set": "Cornucopia"
+  },
+  {
+    "name": "Followers",
+    "image": "http://wiki.dominionstrategy.com/images/thumb/1/12/Followers.jpg/200px-Followers.jpg",
+    "text": [
+      "+2 Cards",
+      "Gain an Estate. Each other player gains a Curse and discards down to 3 cards in hand.",
+      "(This is not in the supply.)"
+    ],
+    "cost": {
+      "coin": "0plus"
+    },
+    "types": [
+      "action",
+      "attack",
+      "prize"
+    ],
+    "show": true,
+    "set": "Cornucopia"
+  },
+  {
+    "name": "Princess",
+    "image": "http://wiki.dominionstrategy.com/images/thumb/4/42/Princess.jpg/200px-Princess.jpg",
+    "text": [
+      "+1 Buy",
+      "While this is in play, cards cost 2 Coin less, but not less than 0 Coins",
+      "(This is not in the supply.)"
+    ],
+    "cost": {
+      "coin": "0plus"
+    },
+    "types": [
+      "action",
+      "prize"
+    ],
+    "show": true,
+    "set": "Cornucopia"
+  },
+  {
+    "name": "Trusty Steed",
+    "image": "http://wiki.dominionstrategy.com/images/thumb/1/12/Trusty_Steed.jpg/200px-Trusty_Steed.jpg",
+    "text": [
+      "Choose two: +2 Cards; or +2 actions; or +2 Coin; or gain 4 Silvers and put your deck into your discard pile. (The choices must be different.)",
+      "(This is not in the supply.)"
+    ],
+    "cost": {
+      "coin": "0plus"
+    },
+    "types": [
+      "action",
+      "prize"
+    ],
+    "show": true,
+    "set": "Cornucopia"
+  },
+  {
+    "name": "Hovel",
+    "image": "http://wiki.dominionstrategy.com/images/thumb/f/f0/Hovel.jpg/200px-Hovel.jpg",
+    "text": [
+      "When you buy a victory card, you may trash this from your hand."
+    ],
+    "cost": {
+      "coin": "1"
+    },
+    "types": [
+      "reaction",
+      "shelter",
+      "supply"
+    ],
+    "show": true,
+    "set": "Dark Ages"
+  },
+  {
+    "name": "Necropolis",
+    "image": "http://wiki.dominionstrategy.com/images/thumb/6/69/Necropolis.jpg/200px-Necropolis.jpg",
+    "text": [
+      "+2 actions"
+    ],
+    "cost": {
+      "coin": "1"
+    },
+    "types": [
+      "action",
+      "shelter",
+      "supply"
+    ],
+    "show": true,
+    "set": "Dark Ages"
+  },
+  {
+    "name": "Overgrown Estate",
+    "image": "http://wiki.dominionstrategy.com/images/thumb/3/36/Overgrown_Estate.jpg/200px-Overgrown_Estate.jpg",
+    "text": [
+      "0 VP",
+      "When you trash this, +1 Card."
+    ],
+    "cost": {
+      "coin": "1"
+    },
+    "types": [
+      "victory",
+      "shelter",
+      "supply"
+    ],
+    "show": true,
+    "set": "Dark Ages"
+  },
+  {
+    "name": "Madman",
+    "image": "http://wiki.dominionstrategy.com/images/thumb/1/19/Madman.jpg/200px-Madman.jpg",
+    "text": [
+      "+2 actions",
+      "Return this to the Madman pile. If you do, +1 Card per card in your hand.",
+      "(This is not in the supply.)"
+    ],
+    "cost": {
+      "coin": "0plus"
+    },
+    "types": [
+      "action"
+    ],
+    "show": true,
+    "set": "Dark Ages"
+  },
+  {
+    "name": "Mercenary",
+    "image": "http://wiki.dominionstrategy.com/images/thumb/c/c5/Mercenary.jpg/200px-Mercenary.jpg",
+    "text": [
+      "You may trash 2 cards from your hand.",
+      "If you do, +2 Cards, +2 Coin, and each other player discards down to 3 cards in hand.",
+      "(This is not in the supply.)"
+    ],
+    "cost": {
+      "coin": "0plus"
+    },
+    "types": [
+      "action",
+      "attack"
+    ],
+    "show": true,
+    "set": "Dark Ages"
+  },
+  {
+    "name": "Spoils",
+    "image": "http://wiki.dominionstrategy.com/images/thumb/9/9f/Spoils.jpg/200px-Spoils.jpg",
+    "text": [
+      "+3 Coin",
+      "When you play this, return it to the Spoils pile.",
+      "(This is not in the supply.)"
+    ],
+    "cost": {
+      "coin": "0plus"
+    },
+    "types": [
+      "treasure"
+    ],
+    "show": true,
+    "set": "Dark Ages"
+  },
+  {
+    "name": "Abandoned Mine",
+    "image": "http://wiki.dominionstrategy.com/images/thumb/6/6d/Abandoned_Mine.jpg/200px-Abandoned_Mine.jpg",
+    "text": [
+      "+1 Coin"
+    ],
+    "cost": {
+      "coin": "0"
+    },
+    "types": [
+      "action",
+      "ruins",
+      "supply"
+    ],
+    "show": true,
+    "set": "Dark Ages"
+  },
+  {
+    "name": "Ruined Library",
+    "image": "http://wiki.dominionstrategy.com/images/thumb/f/fe/Ruined_Library.jpg/200px-Ruined_Library.jpg",
+    "text": [
+      "+1 Card"
+    ],
+    "cost": {
+      "coin": "0"
+    },
+    "types": [
+      "action",
+      "ruins",
+      "supply"
+    ],
+    "show": true,
+    "set": "Dark Ages"
+  },
+  {
+    "name": "Ruined Market",
+    "image": "http://wiki.dominionstrategy.com/images/thumb/f/f2/Ruined_Market.jpg/200px-Ruined_Market.jpg",
+    "text": [
+      "+1 Buy"
+    ],
+    "cost": {
+      "coin": "0"
+    },
+    "types": [
+      "action",
+      "ruins",
+      "supply"
+    ],
+    "show": true,
+    "set": "Dark Ages"
+  },
+  {
+    "name": "Ruined Village",
+    "image": "http://wiki.dominionstrategy.com/images/thumb/a/ae/Ruined_Village.jpg/200px-Ruined_Village.jpg",
+    "text": [
+      "+1 action"
+    ],
+    "cost": {
+      "coin": "0"
+    },
+    "types": [
+      "action",
+      "ruins",
+      "supply"
+    ],
+    "show": true,
+    "set": "Dark Ages"
+  },
+  {
+    "name": "Survivors",
+    "image": "http://wiki.dominionstrategy.com/images/thumb/7/7a/Survivors.jpg/200px-Survivors.jpg",
+    "text": [
+      "Look at the top 2 cards of your deck. Discard them or put them back in any order."
+    ],
+    "cost": {
+      "coin": "0"
+    },
+    "types": [
+      "action",
+      "ruins",
+      "supply"
+    ],
+    "show": true,
+    "set": "Dark Ages"
+  }
+]
+

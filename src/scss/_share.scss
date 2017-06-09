@@ -1,0 +1,53 @@
+.share-overlay {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top:0;left:0;bottom:0;right:0;
+  z-index: 3;
+  background-color: rgba(0,0,0,.5);
+  -webkit-transition: all 250ms ease-in;
+  -moz-transition: all 250ms ease-in;
+  -ms-transition: all 250ms ease-in;
+  -o-transition: all 250ms ease-in;
+  transition: all 250ms ease-in;
+  opacity: 0;
+  display: none;
+}
+
+.share-overlay.open {
+  opacity: 1;
+  display: block;
+}
+
+.share-modal {
+  background-color:#eee;
+  width: 90vw;
+  height: 400px;
+  margin: auto;
+  position: fixed;
+  top:0;left:0;bottom:0;right:0;
+  z-index: 6;
+}
+
+.share-content{
+  padding: 20px;
+  position: relative;
+}
+
+@include media-breakpoint-up(sm) {
+  .share-modal{
+    width: 67vw;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .share-modal{
+    width: 54vw;
+  }
+}
+
+.share-close {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+}
