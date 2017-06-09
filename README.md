@@ -13,8 +13,9 @@ Want a low cost game? Reduce the total cost of all cards. You pick the ingredien
 1. Clone the repo
 2. cd into the project
 3. `npm install`
+4. `npm run serve`
 
 Build a dist: `npm run build`
-Run local server: `npm run serve`
+
 
 
