@@ -147,3 +147,19 @@ h1, h2, h3 {
 .changelog h3 {
   margin-top: 2rem;
 }
+
+#chefHat {
+  position: absolute;
+  margin-top: -1.3em;
+  margin-left: -.8em;
+}
+
+#chefMoustache {
+  position: absolute;
+  margin-left: -5.125em;
+  margin-top: .25em;
+}
+
+#chefHat use, #chefMoustache use {
+  --chef-color: $gray-dark;
+}
