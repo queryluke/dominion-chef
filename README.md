@@ -1,5 +1,5 @@
 # [The Dominion Chef](https://queryluke.github.io/dominion-chef)
-_Preparing specialty Dominion card sets just for you!_
+_A customizable card set generator for Dominion_
 
 The Dominion Chef gives you more control when you generate Dominion decks. 
 Can it randomly generate a card set? Sure! But it does a lot more. Want a friendly game? 

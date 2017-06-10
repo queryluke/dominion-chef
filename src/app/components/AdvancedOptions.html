@@ -1,28 +1,31 @@
-<div class="pt-page-content m-b-3">
-    <div class="container m-t-1">
+<div class="pt-page-content mb-3">
+    <div class="container mt-1">
         <div class="row">
-            <div class="col-xs-12 text-xs-center">
+            <div class="col-12 text-center">
                 <h1>Build Options</h1>
             </div>
         </div>
-        <div class="row m-t-2 text-xs-center">
-            <h2>Expansions</h2>
-            <expansion-list expansions="$ctrl.config.expansions"></expansion-list>
+        <div class="row mt-2 text-center">
+            <div class="col-12">
+                <h2>Expansions</h2>
+                <expansion-list expansions="$ctrl.config.expansions"></expansion-list>
+            </div>
         </div>
-        <div class="row m-t-2">
-            <div class="col-xs-12">
+        </div>
+        <div class="row mt-2">
+            <div class="col-12">
                 <button class="btn btn-primary" ng-click="$ctrl.handleBuild()">Build a Playset</button>
-                <button class="btn btn-outline-warning pull-xs-right" ng-click="$ctrl.handleResetOptions()">Reset Options</button>
+                <button class="btn btn-outline-warning pull-right" ng-click="$ctrl.handleResetOptions()">Reset Options</button>
             </div>
         </div>
         <div class="section-divider"></div>
-        <div class="row m-t-2">
-            <div class="col-xs-12 text-xs-center">
+        <div class="row mt-2">
+            <div class="col-12 text-center">
                 <h2>Advanced Options</h2>
             </div>
         </div>
-        <div class="row m-t-1">
-            <div class="col-xs-12">
+        <div class="row mt-1">
+            <div class="col-12">
                 <h3>Limit Card Types
                     <span class="text-info">
                         <i class="fa fa-question-circle-o" aria-hidden="true" ng-click="$ctrl.toggleHelpText('cardTypes')"></i>
@@ -34,15 +37,17 @@
                         For a 100% random playset, (without any balancing) set all values to 10
                     </p>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-4" ng-repeat="(type, value) in $ctrl.config.limits track by $index">
-                    <label class="text-capitalize">{{ type }}</label>
-                    <rzslider rz-slider-model="$ctrl.config.limits[type]" rz-slider-options="{floor: 0, ceil: 10}"></rzslider>
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-md-4" ng-repeat="(type, value) in $ctrl.config.limits track by $index">
+                        <label class="text-capitalize">{{ type }}</label>
+                        <rzslider rz-slider-model="$ctrl.config.limits[type]" rz-slider-options="{floor: 0, ceil: 10}"></rzslider>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="row m-t-1">
-            <div class="col-xs-12">
+        <div class="row mt-1">
+            <div class="col-12">
                 <h3>Limit Max Cost
                     <span class="text-info">
                         <i class="fa fa-question-circle-o" aria-hidden="true" ng-click="$ctrl.toggleHelpText('maxCost')"></i>
@@ -61,14 +66,16 @@
                         in will be fetched without a max limit. Something that will be remedied in later versions.
                     </p>
                 </div>
-                <div class="col-xs-12">
-                    <rzslider rz-slider-model="$ctrl.config.cost" rz-slider-options="{floor: 20, ceil: 73, onChange: $ctrl.change()}"></rzslider>
+                <div class="row">
+                    <div class="col-12">
+                        <rzslider rz-slider-model="$ctrl.config.cost" rz-slider-options="{floor: 20, ceil: 73, onChange: $ctrl.change()}"></rzslider>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="row m-t-1">
-            <div class="col-xs-12">
+        <div class="row mt-1">
+            <div class="col-12">
                 <h3>Card Abilities (finicky)
                     <span class="text-info">
                         <i class="fa fa-question-circle-o" aria-hidden="true" ng-click="$ctrl.toggleHelpText('cardAbilities')"></i>
@@ -88,12 +95,14 @@
                         This feature will be improved in later releases.
                     </p>
                 </div>
-                <div class="col-sm-12 col-md-6" ng-repeat="(type, value) in $ctrl.config.adds track by $index">
-                    <label class="text-capitalize">{{ type }}</label>
-                    <rzslider
-                            rz-slider-model="$ctrl.config.adds[type].min"
-                            rz-slider-high="$ctrl.config.adds[type].max"
-                            rz-slider-options="{floor: 0, ceil: 10}"></rzslider>
+                <div class="row">
+                    <div class="col-sm-12 col-md-6" ng-repeat="(type, value) in $ctrl.config.adds track by $index">
+                        <label class="text-capitalize">{{ type }}</label>
+                        <rzslider
+                                rz-slider-model="$ctrl.config.adds[type].min"
+                                rz-slider-high="$ctrl.config.adds[type].max"
+                                rz-slider-options="{floor: 0, ceil: 10}"></rzslider>
+                    </div>
                 </div>
             </div>
         </div>
