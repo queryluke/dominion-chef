@@ -43,7 +43,7 @@ module.exports = {
     new webpack.NoErrorsPlugin(),
     new HtmlWebpackPlugin({
       template: conf.path.src('index.html'),
-      baseUrl: '/DomEngine/',
+      baseUrl: '/dominion-chef/',
       inject: true
     }),
     new webpack.optimize.UglifyJsPlugin({
@@ -58,7 +58,7 @@ module.exports = {
   postcss: () => [autoprefixer],
   output: {
     path: path.join(process.cwd(), conf.paths.dist),
-    publicPath: '/DomEngine/',
+    publicPath: '/dominion-chef/',
     filename: '[name]-[hash].js'
   },
   entry: {
