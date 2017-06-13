@@ -1579,10 +1579,10 @@
     "id": "Bu"
   },
   {
-    "name": "treasure Map",
-    "image": "http://wiki.dominionstrategy.com/images/thumb/6/61/treasure_Map.jpg/200px-treasure_Map.jpg",
+    "name": "Treasure Map",
+    "image": "http://wiki.dominionstrategy.com/images/thumb/6/61/Treasure_Map.jpg/200px-Treasure_Map.jpg",
     "text": [
-      "Trash this and another copy of treasure Map from your hand. If you do trash two treasure Maps, gain 4 Gold cards, putting them on top of your deck."
+      "Trash this and another copy of Treasure Map from your hand. If you do trash two Treasure Maps, gain 4 Gold cards, putting them on top of your deck."
     ],
     "cost": {
       "coin": "4"
