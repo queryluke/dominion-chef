@@ -1,6 +1,5 @@
 class WelcomeController {
   handleBuild() {
-    console.log('build');
     this.onBuild();
   }
 }

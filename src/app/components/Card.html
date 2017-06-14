@@ -1,6 +1,6 @@
 <div class="dom-card">
-    <img class="card-image" ng-src="{{ $ctrl.card.image }}" alt="{{ $ctrl.card.name }}" ng-if="$ctrl.$storage.useImages">
-    <div class="card-desc" ng-show="!$ctrl.$storage.useImages">
+    <img class="card-image" check-loaded ng-src="{{ $ctrl.card.image }}" alt="{{ $ctrl.card.name }}" ng-if="$ctrl.$storage.useImages">
+    <div class="card-desc" ng-class="{hidden: !$ctrl.$storage.useImages}">
         <h4 class="card-title"><small>{{ $ctrl.card.name }}</small></h4>
         <div class="card-text-wrapper">
             <p class="card-text" ng-repeat="text in $ctrl.card.text track by $index">{{ text }}</p>
