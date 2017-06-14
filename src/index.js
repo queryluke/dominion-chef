@@ -29,7 +29,10 @@ import 'ngstorage';
 import 'angularjs-slider';
 import 'angular-socialshare';
 import 'angular-clipboard';
+
+// App
 import routesConfig from './routes';
+import logConfig from './log';
 import runConfig from './run';
 
 // Styles
@@ -38,6 +41,7 @@ import './scss/index.scss';
 angular
   .module('app', ['ui.router', 'ngAnimate', 'ngStorage', 'rzModule', '720kb.socialshare', 'angular-clipboard'])
   .config(routesConfig)
+  .config(logConfig)
   .service('DomEngineService', DomEngineService)
   .component('about', About)
   .component('advancedOptions', AdvancedOptions)
